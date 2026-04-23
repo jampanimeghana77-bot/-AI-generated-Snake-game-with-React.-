@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  @apply bg-zinc-950 text-white overflow-hidden;
+}
+
+.neon-box {
+  box-shadow: 0 0 10px theme('colors.cyan.500'), inset 0 0 10px theme('colors.cyan.900');
+  border: 1px solid theme('colors.cyan.400');
+}
+
+.neon-text {
+  text-shadow: 0 0 5px theme('colors.cyan.400'), 0 0 10px theme('colors.cyan.400');
+}
+
+.neon-snake {
+  box-shadow: 0 0 8px theme('colors.green.400');
+  background-color: theme('colors.green.400');
+}
+
+.neon-food {
+  box-shadow: 0 0 10px theme('colors.pink.500');
+  background-color: theme('colors.pink.500');
+  border-radius: 50%;
+}
